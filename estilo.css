@@ -1,0 +1,130 @@
+
+:root{
+    --bg-primary: #252c32;
+    --bg-secondary:#111;
+    --bg-dropdown:#0f1519;
+    --color-primary:#fff;
+    --bg-card:#000;
+}
+
+body{
+    background: var(--bg-primary);
+    color: var(--color-primary);
+    font-size: 16px;
+
+}
+
+.cabecalho{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    font-size: 20px;
+    background: var(--bg-secondary);
+    padding: 10px;
+}
+
+.cabecalho--logo{
+    width: 50%;
+}
+
+.cabecalho--titulo{
+    text-align: center;
+    margin-right: 10px;
+}
+
+.sidebar{
+    display: flex;
+    width: 100%;
+    background-color: var(--bg-dropdown);
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+  
+}
+
+.dropdown{
+    border: 1px solid var(--color-primary);
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 2em 0;
+ 
+}
+
+.dropdown li{
+    display: none;
+    background-color: var(--bg-secondary);
+    height: 50px;
+    line-height: 50px;
+    
+}
+
+.dropdown:hover{
+    background-color: var(--bg-primary);
+}
+.dropdown li:hover{
+    background-color: var(--color-primary);
+    color: var(--bg-secondary);
+}
+
+.dropdown:hover>li{
+    display: block;
+}
+
+.chaveamento{
+    overflow-x: scroll;
+    margin: 1em 0 5em 0;
+}
+
+.winner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.card{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 5px;
+    width: 200px;
+    background-color: var(--bg-card);
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+    
+}
+.times{
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 0.5em;
+    
+}
+.winner-quartas, .winner-semi, .winner-final{
+    align-content: center;
+}
+
+.inferior{
+    width: 100vh;
+    border-top: 1px solid var(--color-primary);
+    margin-top: 50px;
+}
+
+.loser-oitavas{
+    margin-top: 15px;
+}
+
+
+
+footer{
+    position: relative;
+    bottom: 0;
+    background-color: var(--color-primary);
+    color: var(--bg-dropdown);
+    width: 100vw;
+    height: 2em;
+    align-content: center;
+    text-align: center;
+    font-size: 12px;
+}
